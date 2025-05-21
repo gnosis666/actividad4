@@ -4,3 +4,4 @@ plotly
 numpy
 gunicorn
 openpyxl
+os
