@@ -3,6 +3,7 @@
 import pandas as pd
 import numpy as np
 import plotly.express as px
+import os
 from dash import Dash, dcc, html, dash_table
 
 #CARGA TODOS LOS ARCHIVOS EXCEL Y LOS ACOMODA EN DIFERENTES DF QUE SERAN USADOS POSTERIORMENTE 
