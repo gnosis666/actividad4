@@ -169,6 +169,7 @@ fig_stack.update_layout(
 )
 # Se crea el objeto APP
 app = Dash(__name__)
+server = app.server
 
 # Se crea el layout con cada una de las graficas solicitadas 
 app.layout = html.Div([
@@ -205,10 +206,8 @@ app.layout = html.Div([
 # Se ejecuta la app 
 if __name__ == '__main__':  
     port = int(os.environ.get("PORT", 8050))
-    app.run(host="0.0.0.0", port=port, debug=True)
-
-
-
+    # en local usará 8050, en Render usará el puerto que le asignen
+    app.run(host="0.0.0.0", port=port)
 
 
 
